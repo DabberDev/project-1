@@ -1,8 +1,8 @@
-[gd_scene load_steps=19 format=3 uid="uid://c674hveuu71dv"]
+[gd_scene load_steps=19 format=3 uid="uid://b7n7srp8q2ehs"]
 
-[ext_resource type="Script" uid="uid://bnbey6tp07hcf" path="res://character_body_2d.gd" id="1_0xm2m"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cd28jo11fsdod" path="res://Sprite-0001-Sheet.png" id="2_0xm2m"]
-[ext_resource type="Script" uid="uid://c2erboesvtnhx" path="res://animated_sprite_2d.gd" id="3_h2yge"]
+[ext_resource type="Script" path="res://animated_sprite_2d.gd" id="3_h2yge"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0xm2m"]
 
