@@ -1,9 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://c674hveuu71dv"]
+[gd_scene load_steps=6 format=3 uid="uid://c674hveuu71dv"]
 
 [ext_resource type="Script" uid="uid://d4k1dxtqk4vjc" path="res://character_body_2d.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://bseq1cg5xu71m" path="res://icon.svg" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cmgesbm3xg21t" path="res://grass tile 1.png" id="3_h2yge"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0xm2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(32.0504, 26.6154)
 
 [node name="Main" type="Node2D"]
 
@@ -19,3 +23,18 @@ position = Vector2(-1, 9)
 texture = ExtResource("1_ig7tw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Enviorment" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(9, 310)
+scale = Vector2(39.6875, 13)
+texture = ExtResource("3_h2yge")
+region_enabled = true
+region_rect = Rect2(32, 32, 32, 32)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Enviorment"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enviorment/StaticBody2D"]
+position = Vector2(-0.20158, -2.6923)
+shape = SubResource("RectangleShape2D_1bvp3")
