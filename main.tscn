@@ -10,7 +10,7 @@
 size = Vector2(23.2, 23.6)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
-size = Vector2(32.0504, 26.6154)
+size = Vector2(328.304, 64)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
 size = Vector2(99.5104, 100.446)
@@ -32,14 +32,23 @@ texture = ExtResource("1_ig7tw")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 
-[node name="Enviorment" type="Sprite2D" parent="."]
+[node name="Environment" type="StaticBody2D" parent="."]
+position = Vector2(21, 374)
+scale = Vector2(9.147, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment"]
+z_index = 1
+position = Vector2(-2.45983, -32)
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="OwenStinks" type="Sprite2D" parent="Environment"]
 texture_filter = 1
 texture_repeat = 2
-position = Vector2(9, 310)
-scale = Vector2(39.6875, 13)
+position = Vector2(-1.96786, -32)
+scale = Vector2(0.327976, 1)
 texture = ExtResource("3_h2yge")
 region_enabled = true
-region_rect = Rect2(32, 32, 32, 32)
+region_rect = Rect2(0, 0, 1000, 64)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Enviorment"]
 
@@ -65,3 +74,4 @@ shape = SubResource("RectangleShape2D_lquwl")
 position = Vector2(-255, 22)
 scale = Vector2(3.25, 3.25)
 texture = ExtResource("5_lquwl")
+
