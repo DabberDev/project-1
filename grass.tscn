@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://m6vp8n7rbdpx"]
+
+[ext_resource type="Texture2D" uid="uid://c3u78bgql83nb" path="res://some more grass.png" id="1_kl2qe"]
+
+[node name="grass" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(28, 32)
+scale = Vector2(3, 3)
+texture = ExtResource("1_kl2qe")
