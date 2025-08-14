@@ -7,7 +7,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_0xm2m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
-size = Vector2(32.0504, 25.8462)
+size = Vector2(32.0504, 26.6154)
 
 [node name="Main" type="Node2D"]
 
@@ -24,7 +24,7 @@ texture = ExtResource("1_ig7tw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="enviorment" type="Sprite2D" parent="."]
+[node name="Enviorment" type="Sprite2D" parent="."]
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(9, 310)
@@ -33,9 +33,8 @@ texture = ExtResource("3_h2yge")
 region_enabled = true
 region_rect = Rect2(32, 32, 32, 32)
 
-[node name="Area2D" type="Area2D" parent="enviorment"]
-position = Vector2(1.00787, -16.5385)
+[node name="StaticBody2D" type="StaticBody2D" parent="Enviorment"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="enviorment/Area2D"]
-position = Vector2(-1.20945, 14.2308)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enviorment/StaticBody2D"]
+position = Vector2(-0.20158, -2.6923)
 shape = SubResource("RectangleShape2D_1bvp3")
