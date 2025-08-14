@@ -27,10 +27,9 @@ shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="Icon" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(-1, 9)
-scale = Vector2(1, 1)
 texture = ExtResource("1_ig7tw")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 
 [node name="Enviorment" type="Sprite2D" parent="."]
 texture_filter = 1
